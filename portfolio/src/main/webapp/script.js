@@ -28,9 +28,9 @@ function addRandomQuote() {
       ['"Control can sometimes be an illusion. But sometimes you need illusions to gain control. Fantasy is an easy way to give meaning to the world. To cloak our harsh reality with escapist comfort. After all, isnt that why we surround ourselves with so many screens? So we can avoid seeing? So we can avoid each other? So we can avoid truth?" '],
       ['“I wanted to save the world.”']];
   // Pick a random greeting.
-  const quote = quote[Math.floor(Math.random() * quotes.length)];
+  const quote = quotes[Math.floor(Math.random() * quotes.length)];
 
   // Add it to the page.
   const greetingContainer = document.getElementById('quote-container');
-  greetingContainer.innerText = greeting;
+  greetingContainer.innerText = quote;
 }
