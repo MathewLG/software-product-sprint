@@ -27,8 +27,6 @@ body{
     color: white;
 }
 .picture{
-    width: 40%;
-    height: auto;
     margin: auto;
     display: block;
     max-height: 500px;
