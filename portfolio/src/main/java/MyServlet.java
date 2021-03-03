@@ -15,6 +15,6 @@ public class MyServlet extends HttpServlet {
     pageViews++;
 
     response.setContentType("text/html;");
-    response.getWriter().println("<h1>Hello,friend!s</h1>");
+    response.getWriter().println("<h1>Hello,friend!</h1>");
   }
 }
