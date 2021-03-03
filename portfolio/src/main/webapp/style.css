@@ -27,10 +27,11 @@ body{
     color: white;
 }
 .picture{
-    width: 80%;
+    width: 40%;
     height: auto;
     margin: auto;
     display: block;
+    max-height: 500px;
 }
 #projects{
     width: 70%;
