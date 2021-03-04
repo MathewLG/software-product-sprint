@@ -7,45 +7,41 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1 class="title">Hello, friend.</h1>
-      <p id="introduction">My name is Mathew Lopez, I am from Guadalajara, México and I'm studying computer science student at Tec de Monterrey campus Guadalajara. 
+    <div id="introduction">
+        <h1 class="title">Hello, friend.</h1>
+        <p>My name is Mathew Lopez, I am from Guadalajara, México and I'm computer science student at Tec de Monterrey campus Guadalajara. 
         Before college, I went to a technical highschool, where I graduated as a Mechatronics technician.
         I like to listen to music and play the violin. In fact, I am part of the mariachi at my university.
-     </p>
-      <p>When I do cool things I put them in my 
-      <a href="https://github.com/MathewLG"target="blank">Github</a> and I like to connect with people on <a href="https://www.linkedin.com/in/mathewlopezg/" 
-      target="blank"> linkedin</a></p>
-      <p>I have a dog, his name is chip. </p>
-      <img class="picture" src="/images/chip.jpg" alt="Picture of my dog" width="500" height="600"/>
-      <h2 class="title">Projects I'm proud of</h2>
-      <ul id="projects">
-          <li>
-              <h3>SIGHT</h3>
-              <p>
-              SIGHT is a personal project. I started it as my grade as Mechatronics technician. 
-              It consists on adapting hardware and software in order to help people with visual disability to make easier the process of learning how to use a computer. 
-              The first product I've made is a computer keyboard with braille. For which I decided to use mustard seeds in order to make it more ecological.
-              Here is a picture of the making of the first prototipe for the SIGHT keyboard:
-              <img class="picture" src="images/making_sight_2.jpg" alt="Picture of the making of the braille keyboard." width="500" height="600"/>
-              </p>
-            </li>
-          
-          <li><h3>Hour of Code at Tec</h3>
-              <p>At Tec de Monterrey I work at the direction department of computer science.
-              There I design and teach programming courses for highschool students from all over the country. 
-              </p>
-          </li>
-          
-          <li>
-              <h3>México es mío</h3>
-              <p>Mexico es mío is a project with the mision of educate on legal culture and citizen participation around the country. Learn more at
-              <a href="https://mexicoesmio.org/" target="blank">México es mío </a> 
-              Mi work there is with the web development team. 
-              </p> 
-          </li>          
-      </ul>
-      <h2 class="title">Photo gallery!</h2>
+        </p>
+        <p>When I do cool things I put them in my 
+        <a class="link" href="https://github.com/MathewLG"target="blank">Github</a> and I like to connect with people on <a class="link" href="https://www.linkedin.com/in/mathewlopezg/" target="blank"> linkedin</a></p>
+    </div>
+    <div id="chip">
+      <h2>I have a dog, his name is chip. </h2>
+      <img src="images/chip.jpg" alt="Picture of my dog" width="300", height="auto">
+    </div>
+    <div id="projects">
+        <h2>Projects I'm proud of</h2>
+        <h3>SIGHT</h3>
+        <p>
+          SIGHT is a personal project. I started it as my grade as Mechatronics technician. 
+          It consists on adapting hardware and software in order to help people with visual disability to make easier the process of learning how to use a computer. 
+          The first product I've made is a computer keyboard with braille. For which I decided to use mustard seeds in order to make it more ecological.
+          Here is a picture of the making of the first prototipe for the SIGHT keyboard:
+        </p>   
+         <img src="images/making_sight_2.jpg" alt="Picture of the making of the braille keyboard." width="500" height="auto"/>
+        <h3>Hour of Code at Tec</h3>
+        <p>At Tec de Monterrey I work at the direction department of computer science.
+            There I design and teach programming courses for highschool students from all over the country. 
+        </p>
+        <h3>México es mío</h3>
+        <p>Mexico es mío is a project with the mision of educate on legal culture and citizen participation around the country. Learn more at
+        <a class="link" href="https://mexicoesmio.org/" target="blank">México es mío </a> 
+            Mi work there is with the web development team. 
+        </p> 
+    </div>
+    <div id="gallery">
+        <h2 class="title">Photo gallery!</h2>
       <p>I sometimes like to take pictures, here are some of them. </p>
       <div class="gallery">
           <img class="picture" src="images/bogota.jpg" alt="Bogota Landscape">
@@ -53,15 +49,16 @@
           <img class="picture" src="images/mural.jpg" alt="Street art">
           <img class="picture" src="images/dove.jpg" alt ="Dove flying">
       </div>
+    </div>    
+    <br>
+    <div id="random">
+      <h3>One of my favorite shows is Mr. Robot. The main character says very interesting things sometimes. 
+      Click the button to see a random quote from Elliot. </h3>
+      <img class="picture" src="images/mr robot title.png" alt="mr robot title">
       <br>
-      <p id="quote">One of my favorite shows ir Mr. Robot. The main character says very interesting things sometimes. 
-        Click the button to see a random quote from Elliot. 
-        <br>
-        <button onclick="addRandomQuote()">Random quote</button>
-        <div id="quote-container"></div>
-      </p>
-
-    </div>
+      <div id="quote-container"></div>
+      <button onclick="addRandomQuote()">Random quote</button>
+    </div>     
     <div id="footer">
         <p>
             Mathew Gabriel Lopez Garcia, 2021. If You made it this far, react with the cowboy emoji in the community chat. 

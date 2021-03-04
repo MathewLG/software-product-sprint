@@ -1,3 +1,8 @@
+body{
+    background-image: url("images/quartz.jpg");
+    font-family: helvetica;
+    text-align: center;
+}
 #content {
   margin-left: auto;
   margin-right: auto;
@@ -6,28 +11,50 @@
   font-family: helvetica;
 }
 #introduction{
+    padding: 50px;
+    color: azure;
     font-size: medium;
     font-weight: bold;
     text-align: center; 
+    background-image: url("images/Banner.jpg");
 }
-#quote-container {
-  text-align: center;
-}
-#quote{
+#chip{
     text-align: center;
 }
-.title{
-    text-align: center;
+#gallery{
+    padding-top: 50px;
+    background-color: black;
+    color: white;
 }
 .picture{
-    width: auto;
     margin: auto;
     display: block;
+    max-height: 500px;
 }
 #projects{
-    list-style-type: square;
+    width: 70%;
+    margin: auto;
     font-size: medium;
 }
+#random{
+    font-size: medium;
+    margin-bottom: 50px;
+}
 #footer{
-    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: black;
+}
+#quote-container{
+    padding: 20px;
+}
+.link:link{
+    color:rgb(7, 163, 224);    
+}
+.link:visited{
+    color: pink;
+}
+.link:hover{
+    color:skyblue;
 }
