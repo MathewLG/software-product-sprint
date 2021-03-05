@@ -38,5 +38,5 @@ async function greeting(){
     const responseFromServer = await fetch('/hi');
     const greetingArray = await responseFromServer.json();
     const greetingContainer = document.getElementById('greeting-container');
-    greetingContainer.innerText = greetingArray[Math.floor(Math.random()*4)];
+    greetingContainer.innerText = greetingArray[Math.floor(Math.random()*greetingArray.length)];
 }
