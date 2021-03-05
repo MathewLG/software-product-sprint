@@ -34,3 +34,9 @@ function addRandomQuote() {
   const greetingContainer = document.getElementById('quote-container');
   greetingContainer.innerText = quote;
 }
+async function greeting(){
+    const responseFromServer = await fetch('/hi');
+    const greetingArray = await responseFromServer.json();
+    const greetingContainer = document.getElementById('greeting-container');
+    greetingContainer.innerText = greetingArray[Math.floor(Math.random()*greetingArray.length)];
+}
