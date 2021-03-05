@@ -36,7 +36,7 @@ function addRandomQuote() {
 }
 async function greeting(){
     const responseFromServer = await fetch('/hi');
-    const textFromResponse = await responseFromServer.text();
+    const myArray = await responseFromServer.json();
     const greetingContainer = document.getElementById('greeting-container');
-    greetingContainer.innerText = textFromResponse;
+    greetingContainer.innerText = myArray[Math.floor(Math.random()*4)];
 }
