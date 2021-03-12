@@ -25,6 +25,20 @@
         <button onclick="greeting();">Greeting</button>
         <p id="greeting-container"></p>
     </div>
+    <div id="uploads">
+        <h2>This year I want to read 1 book per week, and you can help me achieve this goal.  </h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+          <p>Type the title of your favorite book:</p>
+          <textarea name="message"></textarea>
+          <br/>
+          <p>Upload an image of the book cover:</p>
+          <input type="file" name="image">
+          <br/><br/>
+          <button>Submit</button>
+        </form>
+        <h2>Do you like books too?</h2>
+        <p><a href="/list-uploads">Click here to see all of the uploaded images!</a></p>
+    </div>
     <div id="projects">
         <h2>Projects I'm proud of</h2>
         <h3>SIGHT</h3>

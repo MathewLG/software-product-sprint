@@ -1,5 +1,4 @@
-package com.google.sps.servlets;
-
+package com.mathewlg.sps;
 import com.google.api.gax.paging.Page;
 import com.google.cloud.storage.Blob;
 import com.google.cloud.storage.Bucket;
@@ -12,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /** Shows all of the images uploaded to Cloud Storage. */
-@WebServlet("/list-images")
-public class ListImagesServlet extends HttpServlet {
+@WebServlet("/list-uploads")
+public class UploadListServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -27,7 +26,7 @@ public class ListImagesServlet extends HttpServlet {
     // Output <img> elements as HTML.
     response.setContentType("text/html;");
     for (Blob blob : blobs.iterateAll()) {
-      String imgTag = String.format("<img src=\"%s\" />", blob.getMediaLink());
+      String imgTag = String.format("<img src=\"%s\" height=\"600\" width=\"auto\">", blob.getMediaLink());
       response.getWriter().println(imgTag);
       response.getWriter().println("<br>");
     }

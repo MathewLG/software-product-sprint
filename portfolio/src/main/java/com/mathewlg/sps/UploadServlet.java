@@ -1,3 +1,4 @@
+package com.mathewlg.sps;
 // Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,9 +12,6 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
-package com.google.sps.servlets;
-
 import com.google.cloud.storage.Blob;
 import com.google.cloud.storage.BlobId;
 import com.google.cloud.storage.BlobInfo;
@@ -36,7 +34,7 @@ import javax.servlet.http.Part;
  */
 @WebServlet("/upload")
 @MultipartConfig
-public class FormHandlerServlet extends HttpServlet {
+public class UploadServlet extends HttpServlet {
 
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response)
