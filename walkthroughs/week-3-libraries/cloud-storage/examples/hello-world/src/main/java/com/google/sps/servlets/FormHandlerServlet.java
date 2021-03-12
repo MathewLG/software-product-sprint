@@ -47,7 +47,7 @@ public class FormHandlerServlet extends HttpServlet {
 
     // Get the file chosen by the user.
     Part filePart = request.getPart("image");
-    String fileName = filePart.getSubmittedFileName();
+    String fileName = filePart.getSubmittedFileName() + System.currentTimeMillis();
     InputStream fileInputStream = filePart.getInputStream();
 
     // Upload the file and get its URL
@@ -66,8 +66,8 @@ public class FormHandlerServlet extends HttpServlet {
 
   /** Uploads a file to Cloud Storage and returns the uploaded file's URL. */
   private static String uploadToCloudStorage(String fileName, InputStream fileInputStream) {
-    String projectId = "YOUR_PROJECT_ID";
-    String bucketName = "YOUR_PROJECT_ID.appspot.com";
+    String projectId = "mlopezgarcia-sps-spring21";
+    String bucketName = "mlopezgarcia-sps-spring21.appspot.com";
     Storage storage =
         StorageOptions.newBuilder().setProjectId(projectId).build().getService();
     BlobId blobId = BlobId.of(bucketName, fileName);
